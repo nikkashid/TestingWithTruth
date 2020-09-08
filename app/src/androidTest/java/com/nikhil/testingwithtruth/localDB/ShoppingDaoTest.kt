@@ -72,9 +72,9 @@ class ShoppingDaoTest {
         shoppingDao.insertShoppingItem(shoppingItem2)
         shoppingDao.insertShoppingItem(shoppingItem3)
 
-        val totalamount = shoppingDao.observeTotalPrice().getOrAwaitValue()
+        val totalAmount = shoppingDao.observeTotalPrice().getOrAwaitValue()
 
-        assertThat(totalamount).isEqualTo(1 * 65000f + 2 * 75000f + 3 * 5000f)
+        assertThat(totalAmount).isEqualTo(1 * 65000f + 2 * 75000f + 3 * 5000f)
 
     }
 
