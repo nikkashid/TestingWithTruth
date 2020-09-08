@@ -28,7 +28,8 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation "androidx.core:core-ktx:$core_ktx_verion"
+    implementation "androidx.core:core-ktx:$core_ktx_version"
+    androidTestImplementation "androidx.arch.core:core-testing:$core_ktx_testing_verion"
     implementation "androidx.appcompat:appcompat:$appcompat_version"
     implementation "androidx.constraintlayout:constraintlayout:$constraintlayout_version"
 
